@@ -27,8 +27,8 @@ jobs:
         shell: bash
         run: |
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-          echo $GITHUB_OUTPUT
-          echo ${{ steps }}
+          echo "$GITHUB_OUTPUT"
+          echo "steps"
 
       - uses: actions/cache@v3
         name: Setup pnpm cache
